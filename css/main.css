@@ -1,0 +1,277 @@
+/* Style the header */
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    font-family: "Lato", sans-serif;
+}
+
+.header {
+    text-align: center;
+    color: black;
+    height: 100%;
+}
+
+
+.nav {
+    float: right;
+}
+
+
+
+
+.con:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transition: 1s;
+}
+
+
+
+/* Style the top navigation bar */
+
+.topnav {
+    color: black;
+    font-family: cursive;
+    overflow: hidden;
+    padding-left: 17px;
+    line-height: 6px;
+    font-size: 25px;
+
+}
+
+/* Style the topnav links */
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+
+.column {
+    float: left;
+    background-color: rgba(25, 30, 30, .6);
+    height: 400px;
+    text-align: center;
+    color: aliceblue;
+    padding: 20px;
+    box-shadow: 0px 0px 20px white;
+    font-family: "Lato", sans-serif;
+}
+
+.column:hover {
+    background-color: rgba(25, 30, 33, .96);
+    ;
+}
+
+/* Left and right column */
+
+.column.side {
+    width: 33%;
+}
+
+/* Middle column */
+
+.column.middle {
+    width: 34%;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+.row {
+    padding: 50px;
+    padding-top: 122px;
+    font-family: sans-serif;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+@media (max-width: 600px) {
+    .column.side,
+    .column.middle {
+        width: 100%;
+        padding: 10px;
+
+    }
+}
+
+/* Style the footer */
+
+.footer {
+    background-color: rgba(0, 0, 0, .78);
+    padding: 25px;
+    text-align: center;
+    height: auto;
+}
+
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+    background-color: white;
+    background-image: url(../IMG/search-icon.png);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 4px 0px 4px 30px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    border-radius: 15px;
+}
+
+input[type=first],
+input[type=last],
+input[type=email] {
+    width: 100%;
+    height: 30px;
+    background-color: lightsteelblue;
+}
+
+input[type=em] {
+    width: 10%;
+    height: 30px;
+    padding: 5px;
+    margin: 1.6px
+}
+
+input[type=last]:focus {
+    background-color: beige;
+}
+
+input[type=first]:focus {
+    background-color: beige;
+}
+
+input[type=email]:focus {
+    background-color: beige;
+}
+
+input[type=firs],
+input[type=las],
+input[type=emai] {
+    width: 100%;
+    height: 30px;
+    background-color: lightsteelblue;
+}
+
+input[type=firs]:focus {
+    background-color: beige;
+}
+
+input[type=las]:focus {
+    background-color: beige;
+}
+
+input[type=emai]:focus {
+    background-color: beige;
+}
+
+textarea {
+    height: 100px;
+    width: 100%;
+}
+
+textarea[type=comment] {
+    width: 100%;
+    height: 210px;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: azure;
+}
+
+/*slideshow*/
+
+.slide {
+    height: auto;
+    text-align: center;
+
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.mySlides {
+    width: 100%;
+    height: 700px;
+}
+
+
+.fading {
+    animation: fading 7s infinite;
+}
+
+@keyframes fading {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+.btn {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.success {
+    background-color: darkgreen;
+}
+
+.succes {
+    background-color: #097499;
+    width: 30%;
+}
+
+.succes:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Green */
+
+.success:hover {
+    background-color: #46a049;
+}
+
+
+.social {
+    width: 34px;
+    border-radius: 50%;
+}

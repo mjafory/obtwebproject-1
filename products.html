@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Product</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="IMG/favicon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
+    <link rel="stylesheet" href="css/slide.css">
+    <link rel="stylesheet" href="css2/main.css">
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            background-color: gainsboro;
+            color: black;
+            padding: 0px;
+            margin: 0px;
+            height: 100%;
+        }
+
+        a {
+
+            text-decoration: none;
+        }
+
+        .header {
+            text-align: center;
+            height: auto;
+        }
+
+        .headertext {
+            margin: 0 auto;
+            float: none;
+        }
+
+        .row {
+            width: 100%;
+            padding: 122px 0 0;
+        }
+
+        .subhead1 {
+            width: 300px;
+            color: white;
+        }
+
+        .xp {}
+
+        /*mobile visibility*/
+
+        @media only screen and (max-width: 639px) {
+            .mobile-only {
+                visibility: visible;
+            }
+            .nav {
+                visibility: hidden;
+            }
+        }
+
+        @media only screen and (min-width: 640px) {
+            .mobile-only {
+                visibility: hidden;
+            }
+            .nav {
+                visibility: visible;
+                transition: 0.3s;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="hh">
+
+        <a href="index.html"> <img src="IMG/Logo.png" alt="" class="profile"></a>
+
+
+        <div class="mobile-only" style="float: right">
+            <a href="tel:511-111-1111"><img src="IMG/call%20buttom.png" alt="" style="width:22px; padding-bottom: 10px;"> </a>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></div>
+        <div class="nav">
+            <table>
+                <td><a href="index.html" style=" text-decoration: none;">HOME</a></td>
+                <td><a href="products.html" style=" text-decoration: none;">PRODUCT</a></td>
+                <td><a href="contact.html" style=" text-decoration: none;">CONTACT</a></td>
+                <td>
+                    <form method="get" action="http://www.google.com/search"> <input type="text" name="q" placeholder="Google Search.." size="49" maxlength="255" value="" />
+                    </form>
+                </td>
+            </table>
+
+        </div>
+
+    </div>
+    <div class="header">
+
+        <button class="tablink" onclick="openCity('Do it for me', this, 'gray')" id="defaultOpen">Do It For Me</button>
+        <button class="tablink" onclick="openCity('Do it yourself', this, 'grey')">Do It Yourself</button>
+        <button class="tablink" onclick="openCity('Hosting', this, 'grey')">Hosting</button>
+        <div id="Do it for me" class="tabcontent">
+            <div class="headertext row">
+                <div class="col-md-6">
+                    <h1 style="width: 65%; float: right; font-size: 29px" class="r2">Let us do the honor of making the site of your dreams!</h1>
+                </div>
+                <div class="col-md-6"><img src="IMG/team.png" alt="" style="width: 300px;"></div>
+                <h2 style="width: 50%; margin: auto;font-size: 29px" class="r2">Don't know a thing about how to make a website? Not to worry, our team of professionals will make a site for your business of your own design</h2>
+                <br><br><br>
+
+                <div style="background-color: white; padding: 20px;">
+                    <h3 class="form-title r2" style="text-align: center; font-size: 18px">Have one of our experts call you!</h3>
+                    <br>
+                    <div>
+                        <input type="em" placeholder="Firstname">
+                        <input type="em" placeholder="Last">
+                        <input type="em" placeholder="Email">
+                        <input type="em" placeholder="Phone Number">
+                        <button style="background-color: darkgreen; color:white; padding: 6px; width: 100px;">Sumbit</button>
+                        <br><br><br>
+                        <p>By submitting your information you provide written consent to Web.com and its affiliates contacting you. See below for more details.*</p>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-4 xp">
+                        <hr>
+                        <h2>You do you while we build it for you.</h2><br><br>
+                        <img src="IMG/hands.png" style="height: 200px;">
+                        <br><br><br>
+                        <p class="r2">From customer interview to site launch, our team of experts develop your website so you can concentrate on what you do best - running your business.</p>
+                        <ul>
+                            <li class="r2">Mobile-friendly web page design</li>
+                            <li class="r2">SEO-friendly copywriting</li>
+                            <li class="r2">Website quality control</li>
+                        </ul>
+
+                        <br><br>
+                    </div>
+                    <div class="col-md-4 xp">
+                        <hr>
+                        <h2>We aren't just a web design service.</h2><br><br><br>
+                        <img src="IMG/stuff.png" style="height: 200px;"><br><br><br>
+                        <p class="r2">We're the whole package. Along with unlimited site modifications, all of our professionally-designed websites come with: </p>
+                        <ul>
+                            <li class="r2">A free domain with Domain Privacy</li>
+                            <li class="r2">Hosting with 99.9% guaranteed uptime</li>
+                            <li class="r2">SSL certificate for customer data protection</li>
+                        </ul>
+
+                    </div>
+                    <div class="col-md-4 xp">
+                        <hr>
+                        <h2>Building it is only the beginning.</h2>
+                        <img src="IMG/seobook.png" style="height: 200px;"><br><br><br>
+                        <p class="r2">Once your site goes live, it's easy to add solutions like business email, dedicated tracked phone numbers, and advanced site analytics as part our hosting and maintenance offering. We also have additional business services that include:</p>
+                        <ul>
+                            <li class="r2">Social Media Marketing</li>
+                            <li class="r2">SEO and pay-per-click management</li>
+                            <li class="r2">eCommerce and Local Business Listing services</li>
+                        </ul>
+
+                    </div>
+                </div><br><br>
+                <div>
+                    <hr>
+                    <h1>Check some of our many pieces of work</h1>
+                </div> <br><br><br>
+                <div class="row" style="padding-top: 0;">
+                    <div class="col-md-4">
+                        <img src="IMG/samplesite1.png" style="width: 100%;">
+
+                    </div>
+                    <div class="col-md-4">
+
+                        <img src="IMG/samplesite2.png" style="width: 100%;">
+                    </div>
+                    <div class="col-md-4">
+
+                        <img src="IMG/samplesite3.png" style="width: 100%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Do it yourself" class="tabcontent">
+        <div class="headertext row">
+            <div class="col-md-6">
+                <h1 style="width: 65%; float: right;">Do it yourself, not by yourself</h1>
+            </div>
+            <div class="col-md-6"><img src="IMG/diy.png" alt="" style="width: 300px;"></div>
+            <br><br><br>
+            <h2 style="width: 50%; margin: auto;">With unlimited access to a website coach, we’re right by your side every step of the way.</h2>
+            <div>
+                <div class="row">
+                    <div class="col-md-4 xp">
+                        <hr>
+                        <h2>Drag. Drop. Choose. It's that easy.</h2><br><br><br>
+                        <img src="IMG/diy2.png" style="height: 200px;">
+                        <br><br><br>
+                        <p class="r2">If you can use a mouse, you can use our website builder. With our intuitive drag-and-drop builder, creating the perfect website to showcase your business is easier than you ever thought possible!</p>
+                        <ul>
+                            <li class="r2">Hundreds of designs to choose from</li>
+                            <li class="r2">Thousands of images to use</li>
+                            <li class="r2">Endless design possibilities</li>
+                        </ul>
+
+
+                    </div>
+                    <div class="col-md-4 xp">
+                        <hr>
+                        <h2>Choose the package that's right for you.</h2><br><br><br>
+                        <img src="IMG/stuff.png" style="height: 200px;"><br><br><br>
+                        <p class="r2">We know that every business is different. That's why we have different packages for different business needs. From basic domain and hosting with email to more advanced packages with marketing solutions, large or small, they all include:</p>
+                        <ul>
+                            <li class="r2">Unlimited access to our Website Coaches for web building tips, tricks and expert advice</li>
+                            <li class="r2">A free domain</li>
+                            <li class="r2">A business email address</li>
+                        </ul>
+
+                    </div>
+                    <div class="col-md-4 xp">
+                        <hr>
+                        <h2>Build your site, then grow your business.</h2><br><br><br>
+                        <img src="IMG/seobook.png" style="height: 200px;"><br><br><br>
+                        <p class="r2">Once you get started, it's easy to add business tools and services that fit your specific business needs.</p>
+                        <ul>
+                            <li class="r2">Social Media Marketing</li>
+                            <li class="r2">SEO and pay-per-click management</li>
+                            <li class="r2">eCommerce and Local Business Listing services</li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div><br><br><br>
+                    <hr>
+                    <h1>Take a look at what others have made with our service.</h1>
+                </div><br><br><br>
+                <div class="row" style="padding-top: 0;">
+                    <div class="col-md-4">
+                        <img src="IMG/samplesite4.png" style="width: 100%;">
+
+                    </div>
+                    <div class="col-md-4">
+
+                        <img src="IMG/samplesite5.png" style="width: 100%;">
+                    </div>
+                    <div class="col-md-4">
+
+                        <img src="IMG/samplesite6.png" style="width: 100%;">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+    <div id="Hosting" class="tabcontent">
+        <div class="headertext row">
+            <div class="col-md-6">
+                <h1 style="width: 65%; float: right;">Your website's ready, Now open its doors!</h1>
+            </div>
+            <div class="col-md-6"><img src="IMG/hosting2.png" alt="" style="width: 300px;"></div>
+            <h2 style="width: 50%; margin: auto;">Our hosting service gives your customers a reliable connection to your website.</h2>
+            <div>
+                <div>
+                    <h1 style="line-height:3;">Packages For Reliable, Affordable Hosting</h1>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 xp">
+                        <hr>
+                        <h2>Essential Hosting</h2>
+                        <h1>$5.25/mo</h1>
+                        <p class="r2"> For small business owners who want websites that have basic content with limited multimedia or blog usage.</p>
+                        <ul>
+                            <li class="r2"> 300GB Disk Space</li>
+                            <li class="r2"> Unlimited Data Transfer</li>
+                            <li class="r2"> 25 FTP Accounts</li>
+                            <li class="r2"> 100 Multi-user Emailboxes</li>
+                            <li class="r2"> 1 Free Domain</li>
+                        </ul>
+
+                        <br>
+                    </div>
+                    <div class="col-md-4 xp">
+                        <hr>
+                        <h2>Professional Hosting</h2>
+                        <h2>$7.95/mo</h2>
+                        <p class="r2">For small-to-medium business owners who want a website with dynamic content, like complex forms and robust blogs. </p>
+                        <ul>
+                            <li class="r2">500GB Disk Space</li>
+                            <li class="r2">Unlimited Data Transfer</li>
+                            <li class="r2">50 FTP Accounts</li>
+                            <li class="r2">500 Multi-user Emailboxes</li>
+                            <li class="r2">1 Free Domain</li>
+                        </ul>
+                        <br>
+                    </div>
+                    <div class="col-md-4 xp">
+                        <hr>
+                        <h2>Premium Hosting</h2>
+                        <h2>$9.95/mo</h2>
+                        <p class="r2"> For small-to-medium business owners who want to manage multiple large, high traffic websites on a single platform.</p>
+                        <ul>
+                            <li class="r2"> Unlimited Disk Space</li>
+                            <li class="r2"> Unlimited Data Transfer</li>
+                            <li class="r2"> Unlimited FTP Accounts</li>
+                            <li class="r2"> 1000 Multi-user Emailboxes</li>
+                            <li class="r2"> 1 Free Domain</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="row" style="padding-top: 0;">
+                    <div class="col-md-4">
+                        <hr>
+                        <h2>One click and you're good to go.</h2>
+                        <img src="IMG/hosting.png" style="height: 200px;"><br><br><br>
+                        <p class="r2">One click installation is all it takes to bring over your already built WordPress® or open-source application website.</p>
+                        <ul>
+                            <li class="r2">Seamless installation and validation</li>
+                            <li class="r2">Guaranteed 99.9% uptime</li>
+                        </ul>
+
+                    </div>
+                    <div class="col-md-4">
+                        <hr>
+                        <h2>You build it. We help.</h2>
+                        <img src="IMG/hosting3.png" style="height: 200px;"><br><br><br>
+                        <p class="r2">With our easy-to-use website builder and 24/7 support you’ll have your new website up and running in no time.</p>
+                        <ul>
+                            <li class="r2">Drag and drop website builder</li>
+                            <li class="r2">Do it yourself, not by yourself</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <hr>
+                        <h2>Your site. Your way.</h2>
+                        <img src="IMG/hosting6.png" style="height: 200px;"><br><br><br>
+                        <p class="r2">If you can imagine it, we can help you build it. We have over 25 open source applications you can use to customize your new website, including solutions for:</p>
+                        <ul style="margin-left: 40px; text-align:left;">
+                            <li class="r2">Content management</li>
+                            <li class="r2">Video chat</li>
+                            <li class="r2">eCommerce</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <hr>
+
+        <div class="row">
+
+            <div class="column side fot" style="line-height: 23px;">
+                <button class="btn success">CONTACT INFO</button>
+                <br><br>
+                <p>Phone : <a href="tel:511-111-1111">+511-111-1111</a> </p>
+                <p>E-mail :<a href="mailto:webcom@gmail.com">webcom@gmail.com</a> </p>
+                <hr>
+                <p> 2017 Web.com Group, Inc All Rights Reserved. Web.com is a registered trademark of Web.com Group, Inc. All other registered trademarks herein are the property of their respective owners. </p>
+            </div>
+
+            <div class="column middle fot">
+                <button class="btn success">FOLLOW US</button> <br><br><img src="IMG/facebk.svg" alt="" class="social">
+                <img src="IMG/yt.svg" alt="" class="social">
+                <img src="IMG/ig.svg" alt="" class="social">
+                <img src="IMG/pt.svg" alt="" class="social">
+                <img src="IMG/tw.svg" alt="" class="social">
+                <hr><br><br>
+                <img src="IMG/static_qr_code_without_logo.jpg" alt="" width="30%">
+            </div>
+
+            <div class="column side fot">
+                <button class="btn success">ABOUT US</button>
+                <br><br>
+                <p>We're here for one reason: to help small businesses succeed online. With over 3 million customers and 20 years of experience, we know what small businesses need to succeed on the web. We're here to help with easy solutions that grow your business.</p>
+                <button class=" success" s><a href="#"> Learn more</a></button>
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+        <button id="mytn">Feedback</button>
+    </div>
+
+
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>FEEDBACK</h2>
+            </div>
+            <div class="modal-body">
+
+                <input type="first" id="fname" name="firstname" placeholder="First Name">
+                <br><br>
+                <input type="last" id="fname" name="firstname" placeholder="Last Name">
+                <br><br>
+                <input type="email" id="fname" name="firstname" placeholder="E-mail">
+                <br>
+                <br>
+                <textarea type="comments" placeholder="Write something.."></textarea>
+                <br>
+                <br>
+                <div style="text-align: center;">
+                    <button class="btn success" style="font-size: 15px;">Submit</button>
+                </div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">▲</button>
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html">HOME</a>
+            <a href="products.html">PRODUCT</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="#">
+                <form method="get" action="http://www.google.com/search" style="width: 100%"> <input type="text" name="q" placeholder="Google Search.." size="49" maxlength="255" value="" />
+                </form>
+            </a>
+        </div>
+
+    </div>
+
+    <!---mobile navigation-->
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+        }
+    </script>
+
+
+
+
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <script>
+        // feedback
+        var modal = document.getElementById('myModal');
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("mytn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+    <!--tab srcript--->
+    <script>
+        function openCity(cityName, elmnt, color) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(cityName).style.display = "block";
+            elmnt.style.backgroundColor = color;
+
+        }
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+</body>
+
+</html>
